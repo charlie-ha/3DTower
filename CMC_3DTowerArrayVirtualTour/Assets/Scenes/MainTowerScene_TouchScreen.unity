@@ -261,8 +261,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c100d47fd767d4f0983f4839522f3506, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraTransform: {fileID: 819552354}
-  allHotspots: []
   isSpawningPrefab: 0
   prefabToSpawn: {fileID: 0}
 --- !u!65 &52820756
@@ -2203,8 +2201,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c100d47fd767d4f0983f4839522f3506, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraTransform: {fileID: 819552354}
-  allHotspots: []
   isSpawningPrefab: 0
   prefabToSpawn: {fileID: 0}
 --- !u!1 &329674977
@@ -4505,8 +4501,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c100d47fd767d4f0983f4839522f3506, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraTransform: {fileID: 819552354}
-  allHotspots: []
   isSpawningPrefab: 0
   prefabToSpawn: {fileID: 0}
 --- !u!65 &547379420
@@ -7808,8 +7802,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c100d47fd767d4f0983f4839522f3506, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraTransform: {fileID: 819552354}
-  allHotspots: []
   isSpawningPrefab: 1
   prefabToSpawn: {fileID: 0}
 --- !u!65 &912725252
@@ -9214,8 +9206,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c100d47fd767d4f0983f4839522f3506, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraTransform: {fileID: 819552354}
-  allHotspots: []
   isSpawningPrefab: 0
   prefabToSpawn: {fileID: 0}
 --- !u!65 &1128485686
@@ -14389,8 +14379,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c100d47fd767d4f0983f4839522f3506, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraTransform: {fileID: 819552354}
-  allHotspots: []
   isSpawningPrefab: 1
   prefabToSpawn: {fileID: 2511848641544147812, guid: b85406d61fe074a7bb0c7308a038f9fc, type: 3}
 --- !u!65 &1918608759
@@ -14774,8 +14762,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c100d47fd767d4f0983f4839522f3506, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraTransform: {fileID: 819552354}
-  allHotspots: []
   isSpawningPrefab: 1
   prefabToSpawn: {fileID: 5384385294512811721, guid: debebe3e593aa40a1b9240a2e700dd7f, type: 3}
 --- !u!65 &1943190928
@@ -18346,8 +18332,31 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2622455160954397368, guid: bb0ef250a1fdb4a73b1eef12d39ed5f2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6737884831116081121}
   m_SourcePrefab: {fileID: 100100000, guid: bb0ef250a1fdb4a73b1eef12d39ed5f2, type: 3}
+--- !u!1 &6737884831116081120 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2622455160954397368, guid: bb0ef250a1fdb4a73b1eef12d39ed5f2, type: 3}
+  m_PrefabInstance: {fileID: 6737884831116081119}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6737884831116081121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6737884831116081120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa6d5f405648d48b38a84a837d6130e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraTransform: {fileID: 819552354}
+  allHotspots: []
+  enabled: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
