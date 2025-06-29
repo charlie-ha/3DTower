@@ -23,8 +23,12 @@ Sizing
 Scenes
 Note for versioning: Different people working on different scenes to avoid conflicts when versioning. If you need to bring other people’s work into the main scene, just 1 person does that and then push to GitHub.
 
-MainTowerScene
+MainTowerScene_VR
 Description: This is the main scene used for VR
+
+MainTowerScene_Touchscreen
+Description: This is the main scene used for Mobile Tour project.
+
 
 TowerScene_LevelDesign
 Description: This is the scene used for level design. 
