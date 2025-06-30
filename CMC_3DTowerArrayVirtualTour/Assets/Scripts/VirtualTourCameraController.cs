@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class VirtualTourCameraController : MonoBehaviour
 {
-    private float sensitivity = 1000f;//how fast camera rotate
+    public float sensitivity = 500f;//how fast camera rotate
 
     private float _yaw = 0f;//rotate y axis (vertical)
     private float _pitch = 0f;//rotate x axics (horizontal)
