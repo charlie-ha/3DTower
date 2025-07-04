@@ -213,7 +213,7 @@ MonoBehaviour:
     - line: '|   strictShaderVariantMatching: 0'
     - line: '|   VertexChannelCompressionMask: 4054'
     - line: '|   iPhoneSdkVersion: 988'
-    - line: '|   iOSSimulatorArchitecture: 0'
+    - line: '|   iOSSimulatorArchitecture: 1'
     - line: '|   iOSTargetOSVersionString: 13.0'
     - line: '|   tvOSSdkVersion: 0'
     - line: '|   tvOSSimulatorArchitecture: 0'
@@ -1037,8 +1037,8 @@ MonoBehaviour:
     - rid: 635698085292933124
       type: {class: iOSPlatformSettings, ns: UnityEditor.iOS, asm: UnityEditor.iOS.Extensions}
       data:
-        m_Development: 0
-        m_ConnectProfiler: 0
+        m_Development: 1
+        m_ConnectProfiler: 1
         m_BuildWithDeepProfilingSupport: 0
         m_AllowDebugging: 0
         m_WaitForManagedDebugger: 0
@@ -1049,6 +1049,6 @@ MonoBehaviour:
         m_CompressionType: 0
         m_InstallInBuildFolder: 0
         m_iOSXcodeBuildConfig: 1
-        m_SymlinkSources: 0
+        m_SymlinkSources: 1
         m_PreferredXcode: 
         m_SymlinkTrampoline: 0
