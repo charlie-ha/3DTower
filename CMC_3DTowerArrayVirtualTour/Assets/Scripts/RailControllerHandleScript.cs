@@ -7,6 +7,8 @@ public class RailControllerHandleScript : MonoBehaviour
 {
     public XRKnob trainControllerHandle;
     public Light trainTerminalLight;
+    public AudioSource knobAudio;
+     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -16,13 +18,15 @@ public class RailControllerHandleScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(trainControllerHandle.value == 1)
+        if(trainControllerHandle.value >= 0.8f)
         {
-            trainTerminalLight.intensity = 100;//turn on the light when handle turned right
+            trainTerminalLight.intensity = 100f;//turn on the light when handle turned right
+            knobAudio.Play();
         }
-        else if (trainControllerHandle.value == 0)
+        else if (trainControllerHandle.value <= 0.5f)
         {
-            trainTerminalLight.intensity = 0;//turn off the light when handle turned left
+            trainTerminalLight.intensity = 0f;//turn off the light when handle turned left
+            knobAudio.Stop();
         }
     }
 }
