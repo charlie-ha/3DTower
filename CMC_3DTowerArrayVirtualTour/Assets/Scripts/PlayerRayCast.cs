@@ -56,7 +56,17 @@ public class PlayerRayCast : MonoBehaviour
     {
         if(enabled)//make sure we dont click through UI
         {
-            Vector2 pointerPosition = pointerPositionAction.ReadValue<Vector2>();
+            //Vector2 pointerPosition = pointerPositionAction.ReadValue<Vector2>();
+            Vector2 pointerPosition = Vector2.zero;
+
+            if (Touchscreen.current != null && Touchscreen.current.primaryTouch.press.isPressed)
+            {
+                pointerPosition = Touchscreen.current.primaryTouch.position.ReadValue();
+            }
+            else if (Mouse.current != null && Mouse.current.leftButton.isPressed)
+            {
+                pointerPosition = Mouse.current.position.ReadValue();
+            }
 
             ray = mainCam.ScreenPointToRay(pointerPosition);//create ray from mouse to object
             if(Physics.Raycast(ray, out hit))
@@ -79,7 +89,7 @@ public class PlayerRayCast : MonoBehaviour
 
                     lastHoveredHotspot = hoveredHotspot;
 
-                    if(Pointer.current != null && Pointer.current.press.wasPressedThisFrame)//click on hotspot
+                    if(Touchscreen.current != null && Touchscreen.current.primaryTouch.press.wasPressedThisFrame)//click on hotspot
                     {   
                         if(hoveredHotspot.GetComponent<HotspotScript>().isSpawningPrefab == false)
                         {

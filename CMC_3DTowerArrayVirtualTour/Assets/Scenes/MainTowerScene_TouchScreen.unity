@@ -7877,7 +7877,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSpawningPrefab: 1
-  prefabToSpawn: {fileID: 0}
+  prefabToSpawn: {fileID: 991337827600792997, guid: 91c448ec790ee4dfeba2716136a2d06d, type: 3}
 --- !u!65 &912725252
 BoxCollider:
   m_ObjectHideFlags: 0
